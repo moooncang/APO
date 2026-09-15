@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>PLAY — TAMER IN APOCALYPSE</title>
+<meta name="description" content="붕괴 후 30년, 무저갱. 5개 세력과 19인, 그리고 그들이 계약한 파트너 19종. 크랙 채팅봇.">
+<meta property="og:title" content="PLAY — TAMER IN APOCALYPSE">
+<meta property="og:description" content="붕괴 후 30년, 무저갱. 5개 세력과 19인, 그리고 그들이 계약한 파트너 19종. 크랙 채팅봇.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="home.html">TAMER IN APOCALYPSE</a>
+    <button class="navtoggle" aria-label="메뉴">MENU</button>
+    <ul>
+      <li><a href="world.html">WORLD</a></li>
+      <li><a href="factions.html">FACTIONS</a></li>
+      <li><a href="characters.html">CHARACTERS</a></li>
+      <li><a href="creatures.html">CREATURES</a></li>
+      <li><a href="play.html" class="on">PLAY</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section><div class="wrap">
+  <div class="lbl rv">MODE</div>
+  <h2 class="rv">어느 쪽에서 시작할지 고른다</h2>
+  <p class="lead rv">고른 소속에 따라 첫 장면과 초기 관계가 달라진다. 한번 정하면 AI가 임의로 바꾸지 않는다.</p>
+
+  <table class="tbl rv">
+    <tr><th>모드</th><th>소속</th><th>시작 조건</th><th>자유도</th></tr>
+    <tr><td><b>신디케이트</b></td><td>여명 · 라그나로크 · 라이징 중 택 1</td><td class="d">조직 안의 입지와 임무를 갖고 시작한다</td><td class="d">중</td></tr>
+    <tr><td><b>호크</b></td><td>호크</td><td class="d">나머지 전체와 적대하며 약탈과 습격 중심으로 굴러간다</td><td class="d">중</td></tr>
+    <tr><td><b>부랑자</b></td><td>무소속</td><td class="d">모든 세력과 중립~경계에서 출발하고, 이후 어디든 가입할 수 있다</td><td class="d">최상</td></tr>
+  </table>
+</div></section>
+
+<section><div class="wrap">
+  <div class="lbl rv">STATUS PANEL</div>
+  <h2 class="rv">매 응답 아래에 상황판이 붙는다</h2>
+  <p class="lead rv">날짜와 위치, 파트너 상태, 약속 기한이 전부 여기서 굴러간다. 실제로 출력되는 형태는 이렇다.</p>
+
+  <pre class="panel rv">[⌛12] 9일째 | 잔해지 · 폐병원 지하 | 밤 | 부랑자
+[파트너] 라이카 · 브루트 · 3단계 헌터 · 신뢰 · 왼앞다리 부상
+[기술]
+└목덜미 물기(급소 고정)·숙련
+└흙먼지 차기(시야 차단)·미숙
+[인물]
+└[알마 : 부랑자 : 💰🤝 : 탄약 떨어짐, 초조함]
+[약속]
+└[알마 : D-3 : 코어 두 개로 호위 비용 지불]
+[관계]
+└알마 💰🤝, 이설린 👁🙇
+[상황] 지하 통로에서 야생 헤이즈 무리와 조우, 후퇴 중</pre>
+  <div class="stack rv" style="margin-top:26px">
+    <div><div class="k">기술란</div><div class="v">훈련 장면을 거친 기술만 올라간다. 진화했다고 해서 자동으로 늘어나지는 않는다.</div></div>
+    <div><div class="k">약속란</div><div class="v">구두 약속이나 거래가 성립하면 등재된다. 기한이 있으면 하루씩 줄어들고, 이행하거나 파기하면 사라진다.</div></div>
+    <div><div class="k">관계란</div><div class="v">한 번이라도 만난 인물은 전부 누적된다. 1인당 이모지는 두 개고, 앞에 오는 쪽이 주된 감정이다.</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="lbl rv">RELATION</div>
+  <h2 class="rv">관계는 열두 가지로 표시된다</h2>
+  <p class="lead rv">두 개를 조합해 쓴다. 사건이 쌓여야 움직이며, 급상승하는 일은 없다. 반대로 악화는 즉시 반영된다.</p>
+
+  <table class="tbl emo rv"><tr><td><div class="em">🗡</div><div class="en2">적대</div></td><td><div class="em">👁</div><div class="en2">경계</div></td><td><div class="em">🧊</div><div class="en2">무관심</div></td><td><div class="em">💰</div><div class="en2">거래</div></td><td><div class="em">🎣</div><div class="en2">이용</div></td><td><div class="em">🤝</div><div class="en2">동행</div></td></tr><tr><td><div class="em">🛡</div><div class="en2">신뢰</div></td><td><div class="em">⛓</div><div class="en2">빚짐</div></td><td><div class="em">😨</div><div class="en2">두려움</div></td><td><div class="em">🙇</div><div class="en2">존경</div></td><td><div class="em">⚔</div><div class="en2">경쟁</div></td><td><div class="em">💗</div><div class="en2">호감</div></td></tr></table>
+</div></section>
+
+<section><div class="wrap">
+  <div class="lbl rv">NOTES</div>
+  <h2 class="rv">플레이 전에 알아 두면 좋은 것</h2>
+  <p class="lead rv">이 봇이 다른 봇과 다르게 굴러가는 지점만 모았다.</p>
+
+  <div class="stack rv">
+    <div><div class="k">기술</div><div class="v">기술은 테이머와 파트너가 함께 약속해 만든 동작이다. 합의된 신호와 반복 훈련 장면을 거쳐야 성립하고, 숙련도는 미숙에서 익숙, 숙련, 체화 순으로 올라간다. 전투 중에 즉흥적으로 만들어 쓰는 일은 없다.</div></div>
+    <div><div class="k">판정</div><div class="v">당신의 행동은 전부 시도로 처리된다. 결과는 성공, 대가 있는 성공, 실패 중 하나로 갈린다. 기본 난이도가 높은 편이고 랭커를 상대할 때는 최상까지 올라가지만, 실패가 막다른 길이 되는 일은 없다.</div></div>
+    <div><div class="k">랭커</div><div class="v">무저갱 전역에서 통용되는 다섯 명이고 공식 서열은 없다. 정면충돌은 현실적인 선택지가 아니어서, 대개는 회피하거나 협상하거나 이용하는 쪽으로 풀린다.</div></div>
+    <div><div class="k">파트너를 잃으면</div><div class="v">테이머는 일정 기간 전투 불능에 빠진다. 반대로 테이머가 죽으면 파트너는 고아 개체가 되어 폭주하고, 그 처리를 두고 세력이 충돌한다.</div></div>
+    <div><div class="k">주인공</div><div class="v">세계는 당신을 중심으로 돌지 않는다. 개입하지 않아도 인물들끼리 거래하고 다투며 상황이 진행된다. 그리고 당신의 행동과 대사는 당신이 정한다. AI가 대신 쓰지 않는다.</div></div>
+  </div>
+  <div class="btns rv" style="margin-top:36px"><a class="btn pri" href="#">크랙에서 플레이</a></div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div>TAMER IN APOCALYPSE<br><span style="color:var(--dimmer)">크랙 채팅봇 · 수록 이미지는 전부 생성물이며 무단 전재를 금합니다</span></div>
+    <div><a href="#">크랙에서 플레이 →</a></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
